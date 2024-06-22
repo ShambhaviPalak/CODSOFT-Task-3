@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="clock" class="clock"></div>
+        <button id="setAlarmBtn" class="button">Set New Alarm</button>
+
+        <div id="alarmForm" class="form hidden">
+            <label for="alarmTime">Set Alarm Time:</label>
+            <input type="time" id="alarmTime" name="alarmTime" required>
+            <br>
+            <label for="alarmTone">Choose Alarm Tone:</label>
+            <select id="alarmTone" name="alarmTone">
+                <option value="tone1">Tone 1</option>
+                <option value="tone2">Tone 2</option>
+                <option value="tone3">Tone 3</option>
+            </select>
+            <br>
+            <button id="saveAlarmBtn" class="button">Save Alarm</button>
+        </div>
+
+        <div id="alarmsList" class="alarms-list">
+            <!-- Alarms will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
